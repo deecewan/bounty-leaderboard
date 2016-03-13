@@ -1,0 +1,25 @@
+{
+  "name": "bounty",
+  "version": "0.0.0",
+  "authors": [
+    "David Buchan-Swanson <david.buchanswanson@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "~1.5.0",
+    "angularfire": "~1.1.4",
+    "angular": "~1.5.0"
+  }
+}

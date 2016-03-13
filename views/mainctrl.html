@@ -1,0 +1,28 @@
+<div class="header">
+    <img src="images/logo-light.svg">
+    <h1>Bounty Leaderboard</h1>
+</div>
+<div class="buttons">
+    <p>Sort By</p>
+    <button ng-click="order('name')">Name <span class="sort" ng-show="predicate === 'name'" ng-class="{highLow:highLow}"></span></button>
+    <button ng-click="order('bountyCount')">Bounty Count <span class="sort" ng-show="predicate === 'bountyCount'" ng-class="{highLow:highLow}"></span></button>
+    <button ng-click="order('bountyScore')">Bounty Points <span class="sort" ng-show="predicate === 'bountyScore'" ng-class="{highLow:highLow}"></span></button>
+</div>
+<div class="leaderboard">
+    <div class="leader" ng-repeat="user in users | orderBy:predicate:highLow">
+        <div class="rank">
+            #{{ $index + 1 }}
+        </div>
+        <div class="details">
+            <div class="name">
+                {{ user.name }}
+            </div>
+            <div class="bounties">
+                {{ user.bountyCount }}
+            </div>
+            <div class="points">
+                {{ user.bountyScore }} Bounty {{ user.bountyScore != 1 ? 'Points' : 'Point' }}
+            </div>
+        </div>
+    </div>
+</div>
