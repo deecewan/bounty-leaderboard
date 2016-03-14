@@ -31,19 +31,4 @@ function MainController($scope, users) {
     $scope.highLow = ($scope.predicate === predicate) ? !$scope.highLow : true;
     $scope.predicate = predicate;
   };
-  $scope.updateScore = function(){
-    var user = users.get('1234');
-    user.$loaded().then(function(data){
-      data.bountyScore += 100;
-      data.bountyCount ++;
-      data.$save();
-    }).catch(function(err){
-      console.error("Error: ", err);
-    })
-  }
-}
-
-// todo: add express B/E to handle the posts.
-function ScoreUpdater() {
-
 }
