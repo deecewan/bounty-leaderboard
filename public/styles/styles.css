@@ -58,14 +58,19 @@ body .buttons p {
   margin: 0.5em 0;
 }
 body .buttons button {
-  background-color: #666766;
+  background-color: #8dc641;
   border: none;
-  color: #8dc641;
+  color: #eee;
   padding: 8px 15px;
   margin: 5px;
   font-size: 14px;
 }
 body .buttons button .sort::after {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
   background-image: url("../images/up.svg");
   width: 20px;
   content: '\00A0';
@@ -75,7 +80,11 @@ body .buttons button .sort::after {
   line-height: 1em;
 }
 body .buttons button .sort.highLow::after {
-  background-image: url("../images/down.svg") !important;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 body .leaderboard {
   background-color: #eee;
@@ -109,6 +118,7 @@ body .leaderboard .leader .details {
   display: inline-block;
 }
 body .leaderboard .leader .bounties {
+  color: #eee;
   text-align: center;
   position: absolute;
   background-color: #8dc641;

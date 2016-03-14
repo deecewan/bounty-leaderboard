@@ -1,0 +1,26 @@
+{
+  "name": "bounty",
+  "version": "0.0.1",
+  "private": true,
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deecewan/bounty-leaderboard.git"
+  },
+  "author": "David Buchan-Swanson <david.buchanswanson@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/deecewan/bounty-leaderboard/issues"
+  },
+  "homepage": "https://github.com/deecewan/bounty-leaderboard#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "console-slack": "^0.1.1",
+    "express": "^4.13.4",
+    "firebase": "^2.4.1"
+  }
+}
